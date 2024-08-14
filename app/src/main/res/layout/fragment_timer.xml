@@ -1,0 +1,73 @@
+<!-- fragment_timer.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/timerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/selectText"
+            android:text="@string/select_coffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:id="@+id/pauseButton"
+            android:src="@drawable/baseline_pause_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/coffee_secondary"
+            android:contentDescription="@string/pause"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="20dp" />
+
+        <ImageButton
+            android:id="@+id/stopButton"
+            android:src="@drawable/baseline_stop_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/coffee_secondary"
+            android:contentDescription="@string/stop"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="2dp" />
+
+        <TextView
+            android:id="@+id/finishText"
+            android:text="@string/select_coffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/coffeeBrewingGif"
+        app:layout_constraintTop_toBottomOf="@id/timerlayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
